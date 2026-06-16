@@ -1,4 +1,6 @@
-<center><h1>Hi! My name is Frank 👋🏻</h1></center>
+<div align="center">
+# Hi! My name is Frank 👋🏻
+</div>
 
 - 👋 Hi, I’m @Frank7852
 - 👀 I’m interested in ...
