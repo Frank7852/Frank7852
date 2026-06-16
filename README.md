@@ -2,13 +2,8 @@
   <h1>Hi! My name is Frank 👋🏻</h1>
 </div>
 
-- 👋 Hi, I’m @Frank7852
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
+- 👋 Hi, I’m Frank Neto, or Frank7852.
+- 👀 I’m interested in Music, Games and Technology.
+- 🌱 I’m aways learning something new.
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Frank7852/Frank7852 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 📫 You can reach me on Instagram (Frank7852) or E-Mail (frank7852me@gmail.com)
