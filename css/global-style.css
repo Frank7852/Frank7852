@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   --- ARQUITETURA GLOBAL: CORES ADAPTATIVAS (LIQUID GLASS / QT INTEGRATION) ---
+   ========================================================================== */
+
+:root {
+    /* FONTES E AUDIOVISUAL */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --icons-font: 'Material Symbols Rounded', sans-serif;
+    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    /* TEMA ESCURO PADRÃO (Default)
+       Movido para o :root para que o site assuma estas variáveis nativamente
+       quando o body não tiver a classe clara ativa.
+    */
+    --bg-color-1: #000000;         /* Forçado a preto puro para o efeito 'screen' RGB */
+    --bg-color-2: #111111;
+    --popup-bg-color: rgba(255, 255, 255, 0.02); /* Transforma popups em Glassmorphism */
+    --accent-color: #0088FF;       /* Azul Elétrico para o teu nome */
+    --font-color-1: #eeeeee;
+    --font-color-2: rgba(255, 255, 255, 0.7); /* Suavizado para dar leitura no vidro */
+    --text-field-color: rgba(255, 255, 255, 0.05);
+    --button-color: rgba(255, 255, 255, 0.1);
+    --hyperlink-color: #92CBFF;
+    --stroke-color: rgba(255, 255, 255, 0.08);
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* TEMA CLARO
+   Ativado dinamicamente pelo JavaScript (.light-theme). 
+   Sobrescreve a raiz para o espaço CMYK.
+*/
+.light-theme {
+    --bg-color-1: #ffffff;         /* Forçado a branco puro para o efeito 'multiply' CMYK */
+    --bg-color-2: #f4f6f9;
+    --popup-bg-color: rgba(0, 0, 0, 0.02); /* Glassmorphism claro sutil */
+    --accent-color: #ff383c;       /* Vermelho/Coral vivo para o tema claro */
+    --font-color-1: #111111;
+    --font-color-2: #555555;
+    --text-field-color: rgba(0, 0, 0, 0.03);
+    --button-color: rgba(0, 0, 0, 0.05);
+    --hyperlink-color: #1162ad;
+    --stroke-color: rgba(0, 0, 0, 0.06);
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* ==========================================================================
+   --- RESET UNIVERSAL ---
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    /* O corpo agora consome o fundo do container de forma limpa e em sintonia */
+    background-color: var(--bg-color-1); 
+    color: var(--font-color-1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden; /* Evita barras de rolagem causadas pela flutuação dos blobs */
+    position: relative;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
